@@ -52,14 +52,14 @@ trzeba to ustawic `sudo chown 1000:1000 jenkins_home -R`    to jest katalog utwo
 `docker logs -f jenkins`  jenkins to jest nazwa obrazu  - pokazuje logi wszytskie
 
 uruchomienie obrazu na zasadzie utworzenia `docker-compose up -d`  
-potem pozna robic `docker-compose start`  lub `docker-compose stop`  ... restart 
+potem pozna robic `docker-compose start`  lub `docker-compose stop`  mozemy `docker-compose restart nazwa_obrazu` 
 moza `docker-compose down` zatrzymuje i usuwa
 
 
 
 `ip a`  pokazuje uzyte adresy ip 
 
-druga pozycja 'enp0s3' to adres naszej maszyny  u mnie 192.168.8.108
+druga pozycja 'enp0s3' to adres naszej maszyny chyba virtualnej u mnie 192.168.8.108
 
 w przegladarce bedziemy wizec 192.168.8.107:8080 jenkinsa
 
