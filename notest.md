@@ -133,3 +133,14 @@ nowy script:
     echo "If you want to see the name, please mark the show option"
  fi`
  
+Działana na drugiej maszynie zaczynamy od tworzenia Dockerfile  > `vim Dockerfile`
+
+`
+FROM ubuntu
+
+RUN sudo install openssh-server
+RUN useradd remote_user && \
+    echo "1234" | passwd remote_user  --stdin && \ # Passwd command is deprecated on centos:8
+    mkdir /home/remote_user/.ssh && \
+    chmod 700 /home/remote_user/.ssh`
+
