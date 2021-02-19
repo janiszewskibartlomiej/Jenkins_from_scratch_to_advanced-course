@@ -160,6 +160,7 @@ Tworzymy klucz ssh >> `ssh-keygen -f nazwa_klucza
 
 trzeba zmodyfikowac nasz docker-compose file aby byl worzony remote-host:
 
-```
+![docker-compose.yml](https://github.com/janiszewskibartlomiej/Jenkins_from_scratch_to_advanced-course/blob/master/screenshot_2021-02-19%2012h37_23_ubuntu%5BRunning%5D-OracleVMVirtualBox.png)
+
 
 
