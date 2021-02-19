@@ -154,8 +154,8 @@ RUN /usr/sbin/sshd-keygen
 
 CMD /usr/sbin/sshd -D
    
-    ```
-Tworzymy klucz ssh >> `ssh-keygen -f nazwa_klucza
+ ```
+Tworzymy klucz ssh >> `ssh-keygen -f nazwa_klucza`
 
 
 trzeba zmodyfikowac nasz docker-compose file aby byl worzony remote-host:
