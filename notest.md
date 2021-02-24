@@ -164,5 +164,9 @@ trzeba zmodyfikowac nasz docker-compose file aby byl wrzucony remote-host:
 
 moja konfiguracja z ubuntu nie dziala ale konfiguracja z centos dziala ok i build jest dobrze robiony
 
-![docker-compose.yml z centos]()
+![docker-compose.yml z centos](https://github.com/janiszewskibartlomiej/Jenkins_from_scratch_to_advanced-course/blob/master/screenshot_2021-02-24%2014h53_33_ubuntu%5BRunning%5D-OracleVMVirtualBox.png)
+
+
+nastepnie trzeba uruchomic kontener `docker-compose up -d`
+
 
