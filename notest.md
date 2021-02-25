@@ -180,3 +180,15 @@ mozemy skopiowac do docker remote-key i nie bedziemy musieli podac hasla przy lo
 dodajemy klucz "Dashboard >> Credentials >> System >> Global credentials (unrestricted)"  teraz mamy dostep do tego klucza ssh w naszych konfiguracjach
 
 Tworzac nowy item mozemy wybrac z sekcji buid - ssh remote i dzieki temu mozna tworzyc pliki itd w szytsko w kontenerze remote_host a  nie jenkins.
+
+
+sciagami obraz mysql:
+
+![mysql](https://github.com/janiszewskibartlomiej/Jenkins_from_scratch_to_advanced-course/blob/master/screenshot_2021-02-25%2015h01_53_ubuntu%5BRunning%5D-OracleVMVirtualBox.png)
+
+sprawdzamy logi `docker logs -f db`  czy jest succesfull
+
+polaczymy sie do konsoli w obrazie `docker exec -ti db bash`
+i logujemy si edo mysql `mysql -u root -p`
+
+po zalogowaniu mozemy zobaczyc ze db jest utworzona `show databases;`
