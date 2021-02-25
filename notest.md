@@ -169,4 +169,14 @@ moja konfiguracja z ubuntu nie dziala ale konfiguracja z centos dziala ok i buil
 
 nastepnie trzeba uruchomic kontener `docker-compose up -d`
 
+Jezlei w docker-compose.yml mamy drugi obraz w naszym wypadku remote_host mozemy si edo nei go dostac z pozycji obrazu jenkins bo jest w jednym servisie
 
+mozemy np zalogowac sie do jenkis `docker exec -it jenkins bash`
+a nastepnie do remote >> `ssh remote_user@remote_host`
+
+
+mozemy skopiowac do docker remote-key i nie bedziemy musieli podac hasla przy logowaniu do remote_host  >> `ssh -i remote-key remote_user@remote_host`
+
+dodajemy klucz "Dashboard >> Credentials >> System >> Global credentials (unrestricted)"  teraz mamy dostep do tego klucza ssh w naszych konfiguracjach
+
+Tworzac nowy item mozemy wybrac z sekcji buid - ssh remote i dzieki temu mozna tworzyc pliki itd w szytsko w kontenerze remote_host a  nie jenkins.
